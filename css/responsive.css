@@ -1,0 +1,54 @@
+@media (max-width: 992px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 480px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    & .area {
+      & .inputs {
+        display: grid;
+        gap: 40px;
+        & > div {
+          position: relative;
+          input {
+            width: 50px;
+            height: 60px;
+            font-size: 35px;
+          }
+          span {
+            position: absolute;
+            top: -40px;
+          }
+        }
+      }
+      .control {
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        .hint,
+        .check {
+          width: 100%;
+          flex: 1;
+        }
+      }
+    }
+    & .colors-explain {
+      & .key-color {
+        .key-text {
+          text-align: left;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
